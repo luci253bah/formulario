@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo-form.css">
+    <script src="js/form.js"></script>
+
+    <title>ESPORTES MAGAZINE | FORMULÁRIO PROMOÇÃO </title>
+</head>
+
+<body>
+
+    <main>
+
+        <header class="topo">
+            <section class="titulo">
+                <a href="">Esportes Magazine</a>
+
+            </section>
+
+    <nav class="barra-nav">
+        <ul>
+            <li><a href="autoriza.html">Promoções</a></li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="Esportes.html">Esportes</a></li>   
+        </ul>
+    </nav>
+   </header>
+   <h2>formulario de cadastro promoção</h2>
+
+   <form action="#" method="GET" target="_blank" onsubmit="verify_form()">
+   
+    <fieldset>
+        <legend>cadastro de usuarios</legend>
+        <p>nome completo:</p>
+        <input id="name" type="text" minlength="10"
+        maxlength="80" required>
+
+        <br>
+        <p>Apelido:</p>
+        <input id="nickname" type="text" minlength="2" maxlength="20">
+        <br>
+        <p>Data de nascimento:</p>
+
+        <input id="day" type="text" placeholder="DIA" maxlength="2" required> /
+
+        <input id="month" type="text" placeholder="MÊS" maxlength="2" required> /
+
+        <input id="year" type="text" placeholder="ANO" maxlength="4" required> /
+
+        <br>
+        <p>CPF:</p>
+        <input id="cpf" type="text" maxlength="14" required> /
+
+        <br>
+
+        <p>Time do coração</p>
+        <select id="team_id" maxlength="20">
+            <option id="1">Palmeiras</option>
+            <option id="2">Barcelona</option>
+            <option id="100">Liverpool</option>
+            <option id="199">Santos</option>
+            <option id="300">Corinthias</option>
+            <option id="399">Psg</option>
+            <option id="599">Bayern de Munique</option>
+        </select
+        >
+            <br>
+            <br>
+            <p>Esportes de interesse</p>
+            <br>
+            <div>
+                <input type="checkbox" name="sport_1" id="sport_1">Futebol<br>
+                <input type="checkbox" name="sport_2" id="sport_2">Vôlei<br>
+                <input type="checkbox" name="sport_3" id="sport_3">Basquete<br>
+                <input type="checkbox" name="sport_4" id="sport_4">Futsal<br>
+                <input type="checkbox" name="sport_5" id="sport_5">Automobilismo<br>
+                <input type="checkbox" name="sport_6" id="sport_6">Artes Marciais<br>
+                <input type="checkbox" name="sport_7" id="sport_7">Nataçâo<br>
+               
+               </div>
+
+               <button id="enviar" type="submit" onclick="return validarcampos()" target="_blank">Enviar</button>
+
+               </fieldset>
+
+
+               </form>
+
+               </main>
+
+          </body>
+
+      </html>
